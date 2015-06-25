@@ -4,15 +4,12 @@ var i = 0;
  function eachName(){
 
    for (i = 0; i < wdi_17_names.length; i++) {
-       console.log(wdi_17_names[i]);
-   }
-   // the loop logs each string in the array
-   //notice the difference in what is logged
- }
- eachName();
+      //REFACTORED
+        //Math.floor and Math.random might be useful
+    var pick = Math.floor(Math.random() * wdi_17_names.length)
+        if (used_names_array.indexof(push) === -1){
+        used_names_array.push(pick);
 
 
-
- //REFACTORED
- var namePicker = wdi_17_names[Math.floor(Math.random() * wdi_17_names.length)];
- console.log(namePicker);
+var namePicker = wdi_17_names[pick];
+console.log(namePicker);
