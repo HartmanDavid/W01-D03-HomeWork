@@ -6,8 +6,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" charset="utf-8"></script>
     <title>JS Lab Name Picker</title>
+            <script type="text/javascript">
+        function LoadMyJs(scriptName) {
+        var docHeadObj = document.getElementsByTagName("head")[0];
+        var dynamicScript = document.createElement("script");
+        dynamicScript.type = "text/javascript";
+        dynamicScript.src = scriptName;
+        docHeadObj.appendChild(newScript);
+        }
+</script>
+
   </head>
   <body>
+    <button onclick="eachName()">HI!</button>
 
+      <body onLoad="LoadMyJs()">
   </body>
 </html>
